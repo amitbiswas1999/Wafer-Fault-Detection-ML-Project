@@ -18,17 +18,7 @@ class KMeansClustering:
         self.logger_object = logger_object
 
     def elbow_plot(self,data):
-        """
-                        Method Name: elbow_plot
-                        Description: This method saves the plot to decide the optimum number of clusters to the file.
-                        Output: A picture saved to the directory
-                        On Failure: Raise Exception
-
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
-
-                """
+        
         self.logger_object.log(self.file_object, 'Entered the elbow_plot method of the KMeansClustering class')
         wcss=[] # initializing an empty list
         try:

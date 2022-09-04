@@ -2,31 +2,14 @@ import pandas as pd
 import numpy as np
 from sklearn.impute import KNNImputer
 class Preprocessor:
-    """
-        This class shall  be used to clean and transform the data before training.
-
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
-
-        """
+   
 
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
         self.logger_object = logger_object
 
     def remove_columns(self,data,columns):
-        """
-                Method Name: remove_columns
-                Description: This method removes the given columns from a pandas dataframe.
-                Output: A pandas DataFrame after removing the specified columns.
-                On Failure: Raise Exception
 
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
-
-        """
         self.logger_object.log(self.file_object, 'Entered the remove_columns method of the Preprocessor class')
         self.data=data
         self.columns=columns
