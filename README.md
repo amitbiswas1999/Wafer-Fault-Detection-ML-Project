@@ -12,7 +12,7 @@ There are two classes: +1 and -1.
     -1: Means that the wafer is faulty and it needa to be replaced.
     
     
-#### Data Description
+### Data Description
     
 The client will send data in multiple sets of files in batches at a given location.
 Data will contain Wafer names and 590 columns of different sensor values for each wafer.
@@ -24,17 +24,17 @@ relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, NUmber of Columnns, 
 Name of Columns, and their dataype.
     
-#### Data Validation
+### Data Validation
 
 In this step, we perform different sets of validation like filename validation, number of columns, name of the columns,data type of each columns and other kind of validations
 
 
-#### Data Insertion in Database
+### Data Insertion in Database
      
 All the files in the "Good_Data_Folder" are inserted in the Database table. If any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
 
      
-#### Model Training
+### Model Training
     
 Data Export from Db: The data in a stored database is exported as a CSV file to be used for model training.
 
